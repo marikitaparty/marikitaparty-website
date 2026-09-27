@@ -1,2 +1,5 @@
 .wrangler/
+.cloudflare/
+.deploy/
 .DS_Store
+node_modules/
