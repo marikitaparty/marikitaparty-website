@@ -1,0 +1,211 @@
+<!doctype html>
+<!--
+  Odomo marketing website: Terms of Service.
+  Shares the homepage's brand tokens; legal copy is a standard-form template
+  built only from confirmed product facts. Bracketed fields are placeholders
+  the publisher must fill in before this page goes live.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Terms of Service · Odomo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #171717; --ink-muted: #6E6E6E; --ink-faint: #8B8B8B;
+  --surface: #FFFFFF; --surface-alt: #F7F6F4; --border: #E5E3E0;
+  --amber: #F2660D; --amber-ink: #C24E08; --amber-surface: #FDE7D8;
+  --teal: #157a72;
+  --radius-lg: 20px; --radius-md: 16px; --radius-pill: 999px;
+  --shadow-card: 0 1px 2px rgba(20,22,28,.04), 0 8px 20px -12px rgba(20,22,28,.12);
+  --max-w: 1120px;
+  --font-display: 'Quicksand', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+@media (prefers-reduced-motion: reduce) { * { animation-duration: .001ms !important; transition-duration: .001ms !important; } }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--surface); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+h1, h2 { font-family: var(--font-display); font-weight: 700; letter-spacing: -.01em; margin: 0; }
+a { color: inherit; }
+.wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
+
+.brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.brand-mark { width: 21px; height: 21px; flex: none; }
+.wordmark { font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--ink); }
+.wordmark .accent { color: #b5691a; }
+
+.site-header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+.header-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 72px; }
+.back-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14.5px; color: var(--ink-muted); text-decoration: none; }
+.back-link svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.back-link:hover { color: var(--ink); }
+
+.legal-hero { padding-top: 48px; padding-bottom: 20px; }
+.legal-hero .eyebrow { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); margin-bottom: 10px; }
+.legal-hero h1 { font-size: clamp(28px, 4.4vw, 38px); }
+.legal-hero .meta { margin-top: 14px; font-size: 14px; color: var(--ink-faint); }
+.legal-hero .meta strong { color: var(--ink-muted); font-weight: 700; }
+.placeholder { color: var(--amber-ink); background: var(--amber-surface); padding: 1px 6px; border-radius: 6px; font-weight: 600; overflow-wrap: anywhere; }
+
+.legal-body { padding-top: 12px; padding-bottom: 72px; display: grid; gap: 48px; grid-template-columns: 1fr; }
+.legal-toc { align-self: start; }
+.legal-toc-inner { border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface-alt); padding: 20px; }
+.legal-toc-inner h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
+.legal-toc-inner ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.legal-toc-inner a { font-size: 14px; color: var(--ink-muted); text-decoration: none; display: block; padding: 4px 0; }
+.legal-toc-inner a:hover { color: var(--ink); }
+
+.legal-content { max-width: 74ch; }
+.legal-content section { padding-bottom: 32px; margin-bottom: 32px; border-bottom: 1px solid var(--border); }
+.legal-content section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.legal-content h2 { font-size: 20px; margin-bottom: 12px; scroll-margin-top: 88px; }
+.legal-content p { margin: 0 0 14px; color: var(--ink-muted); font-size: 15.5px; line-height: 1.75; }
+.legal-content p:last-child { margin-bottom: 0; }
+.legal-content ul { margin: 0 0 14px; padding-left: 20px; color: var(--ink-muted); font-size: 15.5px; line-height: 1.75; }
+.legal-content li { margin-bottom: 6px; }
+a:focus-visible, .legal-toc-inner a:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; border-radius: 4px; }
+
+.site-footer { border-top: 1px solid var(--border); padding: 32px 0; }
+.footer-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.footer-links { display: flex; gap: 20px; }
+.footer-links a { font-size: 13.5px; color: var(--ink-muted); text-decoration: none; }
+.footer-links a:hover { color: var(--ink); }
+.footer-legal { font-size: 12.5px; color: var(--ink-faint); }
+
+@media (min-width: 900px) {
+  .legal-body { grid-template-columns: 240px 1fr; }
+  .legal-toc { position: sticky; top: 92px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="odomo.html" aria-label="Odomo home">
+      <svg class="brand-mark" viewBox="0 0 120 120" role="img" aria-hidden="true">
+        <path d="M14 60 A46 46 0 0 1 106 60" fill="none" stroke="#1f5c8a" stroke-width="8" stroke-linecap="round"/>
+        <g stroke="#1f5c8a" stroke-width="4" stroke-linecap="round">
+          <line x1="60" y1="16" x2="60" y2="24"/><line x1="16" y1="60" x2="24" y2="60"/><line x1="96" y1="60" x2="104" y2="60"/>
+          <line x1="27" y1="27" x2="33" y2="33"/><line x1="93" y1="27" x2="87" y2="33"/>
+        </g>
+        <path d="M78 34 C79 30 74 27 71 30 L58 55 C56 59 60 63 64 61 Z" fill="#e08a2c"/>
+        <circle cx="60" cy="60" r="6" fill="#16456a"/>
+      </svg>
+      <span class="wordmark">od<span class="accent">o</span>mo</span>
+    </a>
+    <a class="back-link" href="odomo.html">
+      <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+      Back to home
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap legal-hero">
+    <span class="eyebrow">Legal</span>
+    <h1>Terms of Service</h1>
+    <p class="meta"><strong>Effective date:</strong> <span class="placeholder">[Add effective date before publishing]</span> · Applies to the Odomo mobile app (iOS and Android)</p>
+  </div>
+
+  <div class="wrap legal-body">
+    <nav class="legal-toc" aria-label="Terms sections">
+      <div class="legal-toc-inner">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#acceptance">Acceptance of terms</a></li>
+          <li><a href="#service">Description of service</a></li>
+          <li><a href="#purchases">In-app purchases</a></li>
+          <li><a href="#accuracy">Accuracy of estimates</a></li>
+          <li><a href="#responsibilities">Your responsibilities</a></li>
+          <li><a href="#ip">Intellectual property</a></li>
+          <li><a href="#termination">Termination</a></li>
+          <li><a href="#warranty">Disclaimer &amp; liability</a></li>
+          <li><a href="#law">Governing law</a></li>
+          <li><a href="#changes">Changes to these terms</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ol>
+      </div>
+    </nav>
+
+    <div class="legal-content">
+      <section id="acceptance">
+        <h2>1. Acceptance of terms</h2>
+        <p>By downloading, installing, or using the Odomo app, you agree to these Terms of Service. If you don't agree with them, please don't use the app.</p>
+        <p>This is a standard-form template written from the app's actual functionality as of this build. It has not been reviewed by legal counsel. Replace the <span class="placeholder">bracketed placeholders</span> and have it reviewed before publishing it for real users.</p>
+      </section>
+
+      <section id="service">
+        <h2>2. Description of service</h2>
+        <p>Odomo is a fuel and vehicle management app. It lets you log fuel and odometer entries, by photographing a receipt or dashboard, or by typing them in manually, and uses that history to show spending trends and predict upcoming refuel and service needs.</p>
+        <p>The app currently stores your data locally on your device. Some features described here, such as cloud sync, are planned but not yet available; the app will indicate clearly which features are live.</p>
+      </section>
+
+      <section id="purchases">
+        <h2>3. In-app purchases</h2>
+        <p>AI-powered auto-fill from a photographed receipt or dashboard is a premium feature, available as an in-app purchase through the App Store or Google Play. Manual entry remains free for everyone, with no purchase required. Purchases are billed and managed by Apple or Google under their respective terms, and refunds are handled through the platform you purchased from.</p>
+      </section>
+
+      <section id="accuracy">
+        <h2>4. Accuracy of estimates</h2>
+        <p>Predictive refuel and service reminders, and any figures read automatically from a photographed receipt or dashboard, are <strong>estimates only</strong>. They're calculated from the entries you've logged and may be wrong, incomplete, or out of date. Always confirm a reading before saving it, and don't rely on a reminder as your only signal that your vehicle needs fuel or service.</p>
+      </section>
+
+      <section id="responsibilities">
+        <h2>5. Your responsibilities</h2>
+        <ul>
+          <li>Review and correct any auto-filled entry before saving it, since automated readings can be inaccurate.</li>
+          <li>Use the app only for its intended purpose of tracking your own vehicles' fuel and maintenance.</li>
+          <li>Don't attempt to reverse-engineer, disrupt, or misuse the app or the services it depends on.</li>
+        </ul>
+      </section>
+
+      <section id="ip">
+        <h2>6. Intellectual property</h2>
+        <p>The Odomo name, logo, and app design are the property of <span class="placeholder">[Add company/developer legal name]</span>. Your own logged data (the entries, photos, and vehicles you add) remains yours; using the app doesn't transfer any rights in that content to us.</p>
+      </section>
+
+      <section id="termination">
+        <h2>7. Termination</h2>
+        <p>You may stop using Odomo at any time by uninstalling the app; since your data is stored locally, uninstalling removes it along with the app. We may update or discontinue features of the app, and we'll aim to give notice in-app before any change that affects your existing data.</p>
+      </section>
+
+      <section id="warranty">
+        <h2>8. Disclaimer &amp; limitation of liability</h2>
+        <p>Odomo is provided "as is," without warranties of any kind, express or implied. We don't guarantee that automated readings, predictions, or reminders will always be accurate or available. To the fullest extent permitted by law, <span class="placeholder">[Add company/developer legal name]</span> is not liable for any indirect, incidental, or consequential damages arising from your use of the app, including missed refuels or service based on an inaccurate estimate.</p>
+      </section>
+
+      <section id="law">
+        <h2>9. Governing law</h2>
+        <p>These terms are governed by the laws of <span class="placeholder">[Add governing jurisdiction]</span>, without regard to its conflict-of-law provisions.</p>
+      </section>
+
+      <section id="changes">
+        <h2>10. Changes to these terms</h2>
+        <p>If these terms change in a way that materially affects your rights, we'll update the effective date above and, where practical, notify you in the app before the change takes effect.</p>
+      </section>
+
+      <section id="contact">
+        <h2>11. Contact us</h2>
+        <p>Questions about these terms can be sent to <span class="placeholder">[Add support/contact email]</span>, operated by <span class="placeholder">[Add company/developer legal name]</span>.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span class="footer-legal">© 2026 Odomo. All rights reserved.</span>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="odomo.html">Home</a>
+      <a href="odomo-privacy.html">Privacy Policy</a>
+      <a href="odomo-terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
