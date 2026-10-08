@@ -2,9 +2,9 @@
   "name": "marikitaparty-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Marikitaparty studio site, deployed to Cloudflare Pages.",
+  "description": "Marikitaparty software company website, deployed to Cloudflare Pages.",
   "scripts": {
-    "deploy": "rm -rf .deploy && mkdir -p .deploy && cp index.html odomo.html styles.css script.js .deploy/ && cp -R assets .deploy/ && wrangler pages deploy .deploy --project-name=marikitaparty --branch=main",
-    "deploy:preview": "rm -rf .deploy && mkdir -p .deploy && cp index.html odomo.html styles.css script.js .deploy/ && cp -R assets .deploy/ && wrangler pages deploy .deploy --project-name=marikitaparty --branch=preview"
+    "deploy": "rm -rf .deploy && mkdir -p .deploy && cp index.html about.html odomo.html styles.css script.js .deploy/ && cp -R assets .deploy/ && wrangler pages deploy .deploy --project-name=marikitaparty --branch=main",
+    "deploy:preview": "rm -rf .deploy && mkdir -p .deploy && cp index.html about.html odomo.html styles.css script.js .deploy/ && cp -R assets .deploy/ && wrangler pages deploy .deploy --project-name=marikitaparty --branch=preview"
   }
 }
